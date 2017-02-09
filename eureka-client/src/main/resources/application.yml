@@ -1,0 +1,13 @@
+server:
+  port: 2223
+spring:
+  application:
+    name: eureka-client
+eureka:
+  instance:
+    hostname: client
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-peer1:1111/eureka,http://eureka-peer2:1112/eureka
