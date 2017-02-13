@@ -13,26 +13,11 @@
     <name>eureka02</name>
     <url>http://maven.apache.org</url>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
     <dependencies>
+        <!--eureka服务器-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka-server</artifactId>
-        </dependency>
-
-        <!--表示为web工程-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!--暴露各种指标-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
     </dependencies>

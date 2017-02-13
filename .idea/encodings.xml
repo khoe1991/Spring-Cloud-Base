@@ -3,12 +3,17 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/compute-service-dev" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/compute-service-production" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/compute-service-production" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/compute-service-dev2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka01" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka02" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbit-test01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbit-test02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-dev" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-dev2" charset="UTF-8" />
   </component>
 </project>

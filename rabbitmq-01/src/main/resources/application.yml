@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: rabbitmq-01
+  rabbitmq:
+    host: 172.16.20.250
+    username: springcloud
+    password: 123456
+    virtual-host: springCloud
+
+
+server:
+  port: 8001
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/  #注册到eureka

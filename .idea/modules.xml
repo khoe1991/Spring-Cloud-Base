@@ -4,11 +4,18 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/base.iml" filepath="$PROJECT_DIR$/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/compute-service-dev/compute-service-dev.iml" filepath="$PROJECT_DIR$/compute-service-dev/compute-service-dev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/compute-service-dev2/compute-service-dev2.iml" filepath="$PROJECT_DIR$/compute-service-dev2/compute-service-dev2.iml" />
       <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eureka-client/eurekaclient.iml" filepath="$PROJECT_DIR$/eureka-client/eurekaclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/eureka-client/eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka01/eureka01.iml" filepath="$PROJECT_DIR$/eureka01/eureka01.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka02/eureka02.iml" filepath="$PROJECT_DIR$/eureka02/eureka02.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka03/eureka03.iml" filepath="$PROJECT_DIR$/eureka03/eureka03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbit-test01/rabbit-test01.iml" filepath="$PROJECT_DIR$/rabbit-test01/rabbit-test01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbit-test02/rabbit-test02.iml" filepath="$PROJECT_DIR$/rabbit-test02/rabbit-test02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-01/rabbitmq-01.iml" filepath="$PROJECT_DIR$/rabbitmq-01/rabbitmq-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-02/rabbitmq-02.iml" filepath="$PROJECT_DIR$/rabbitmq-02/rabbitmq-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-dev/test-dev.iml" filepath="$PROJECT_DIR$/test-dev/test-dev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-dev2/test-dev2.iml" filepath="$PROJECT_DIR$/test-dev2/test-dev2.iml" />
     </modules>
   </component>
 </project>

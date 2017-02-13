@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        output_channel:       #channelName
+          destination: mydest #destination，或者可以认为是发布－订阅模型里面的topic
+          binder: rabbit1
+      binders:
+        rabbit1:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: 176.16.20.250   #rabbitMQ服务器地址
+                port: 5672            #rabbitMQ服务器端口
+                username: springcloud
+                password: 123456
+                virtual-host: springCloud

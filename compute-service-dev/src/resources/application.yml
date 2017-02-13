@@ -12,12 +12,6 @@ spring:
       discovery:
         enabled: true #开启通过服务来访问Config Server的功能
         service-id: config-server #来指定Config Server注册的服务名
-#  rabbitmq: #rabbitmq配置
-#    host: 172.16.20.250
-#    username: jycfmq
-#    password: jycfmq
-#    virtual-host: jycf01
-#    port: 5672
 
 
 eureka:

@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="compute-service-dev" />
+        <module name="compute-service-dev2" />
         <module name="computecontroller" />
         <module name="computeservice" />
         <module name="config" />
@@ -16,11 +16,31 @@
         <module name="eureka03" />
         <module name="eurekaclient" />
         <module name="eurekaserver" />
+        <module name="rabbit-test01" />
+        <module name="rabbit-test02" />
+        <module name="rabbitmq-01" />
+        <module name="rabbitmq-02" />
+        <module name="test-dev" />
+        <module name="test-dev2" />
+      </profile>
+      <profile name="Annotation profile for base" enabled="true">
+        <sourceOutputDir name="../compute-service-dev/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../compute-service-dev/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="compute-service" />
+      </profile>
+      <profile name="Annotation profile for compute-service-dev" enabled="true">
+        <sourceOutputDir name="../compute-service-dev2/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../compute-service-dev2/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="compute-service-dev" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base" target="1.8" />
+      <module name="compute-service" target="1.8" />
       <module name="compute-service-dev" target="1.8" />
+      <module name="compute-service-dev2" target="1.8" />
       <module name="compute-service-production" target="1.8" />
       <module name="computecontroller" target="1.8" />
       <module name="computeservice" target="1.8" />
@@ -36,6 +56,12 @@
       <module name="eurekaserver" target="1.8" />
       <module name="eurekaserver01" target="1.8" />
       <module name="eurekaserver02" target="1.8" />
+      <module name="rabbit-test01" target="1.8" />
+      <module name="rabbit-test02" target="1.8" />
+      <module name="rabbitmq-01" target="1.8" />
+      <module name="rabbitmq-02" target="1.8" />
+      <module name="test-dev" target="1.8" />
+      <module name="test-dev2" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

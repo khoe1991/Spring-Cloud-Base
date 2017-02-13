@@ -1,0 +1,7 @@
+spring:
+  rabbitmq: #rabbitmq配置
+    host: 172.16.20.250
+    port: 5672
+    username: jycfmq
+    password: jycfmq
+    virtual-host: jycf01
