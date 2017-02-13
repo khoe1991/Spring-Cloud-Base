@@ -10,9 +10,10 @@
     <packaging>pom</packaging>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.3.5.RELEASE</version>
+        <!--用cloud-parent替代boot-parent，具备同样的功能，且附加了cloud的依赖-->
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-parent</artifactId>
+        <version>Brixton.SR7</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
 
@@ -31,10 +32,12 @@
         <module>compute-service-dev2</module>
         <module>test-dev</module>
         <module>test-dev2</module>
-        <module>rabbit-test01</module>
-        <module>rabbit-test02</module>
+        <module>rabbit-sender</module>
+        <module>rabbit-receiver-01</module>
+        <module>rabbit-receiver-02</module>
         <module>rabbitmq-01</module>
         <module>rabbitmq-02</module>
+        <module>rabbit-sender-01</module>
     </modules>
 
     <dependencies>
@@ -43,6 +46,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
 
         <!--表示为web工程-->

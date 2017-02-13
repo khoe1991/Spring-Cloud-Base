@@ -10,8 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/eureka01/eureka01.iml" filepath="$PROJECT_DIR$/eureka01/eureka01.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka02/eureka02.iml" filepath="$PROJECT_DIR$/eureka02/eureka02.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka03/eureka03.iml" filepath="$PROJECT_DIR$/eureka03/eureka03.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rabbit-test01/rabbit-test01.iml" filepath="$PROJECT_DIR$/rabbit-test01/rabbit-test01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rabbit-test02/rabbit-test02.iml" filepath="$PROJECT_DIR$/rabbit-test02/rabbit-test02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbit-receiver-01/rabbit-receiver-01.iml" filepath="$PROJECT_DIR$/rabbit-receiver-01/rabbit-receiver-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbit-receiver-02/rabbit-receiver-02.iml" filepath="$PROJECT_DIR$/rabbit-receiver-02/rabbit-receiver-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbit-sender-01/rabbit-sender-01.iml" filepath="$PROJECT_DIR$/rabbit-sender-01/rabbit-sender-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq-01/rabbitmq-01.iml" filepath="$PROJECT_DIR$/rabbitmq-01/rabbitmq-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq-02/rabbitmq-02.iml" filepath="$PROJECT_DIR$/rabbitmq-02/rabbitmq-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-dev/test-dev.iml" filepath="$PROJECT_DIR$/test-dev/test-dev.iml" />

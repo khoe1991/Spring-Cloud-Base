@@ -16,7 +16,9 @@
         <module name="eureka03" />
         <module name="eurekaclient" />
         <module name="eurekaserver" />
-        <module name="rabbit-test01" />
+        <module name="rabbit-receiver-01" />
+        <module name="rabbit-receiver-02" />
+        <module name="rabbit-sender-01" />
         <module name="rabbit-test02" />
         <module name="rabbitmq-01" />
         <module name="rabbitmq-02" />
@@ -56,6 +58,9 @@
       <module name="eurekaserver" target="1.8" />
       <module name="eurekaserver01" target="1.8" />
       <module name="eurekaserver02" target="1.8" />
+      <module name="rabbit-receiver-01" target="1.8" />
+      <module name="rabbit-receiver-02" target="1.8" />
+      <module name="rabbit-sender-01" target="1.8" />
       <module name="rabbit-test01" target="1.8" />
       <module name="rabbit-test02" target="1.8" />
       <module name="rabbitmq-01" target="1.8" />

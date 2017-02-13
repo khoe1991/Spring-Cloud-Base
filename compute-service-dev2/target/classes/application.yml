@@ -1,9 +1,9 @@
 server:
-  port: 8002
+  port: 8001
 
 spring:
   application:
-    name: compute-service-dev2
+    name: compute-service-dev
   cloud: #客户端服务启动时才会向配置中心请求配置文件，之后默认不会主动刷新
     config:
       uri: http://localhost:8888  #配置中心服务器地址,默认地址是8888
@@ -12,6 +12,7 @@ spring:
       discovery:
         enabled: true #开启通过服务来访问Config Server的功能
         service-id: config-server #来指定Config Server注册的服务名
+
 
 eureka:
   client:

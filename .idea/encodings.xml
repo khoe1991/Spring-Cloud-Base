@@ -9,8 +9,10 @@
     <file url="file://$PROJECT_DIR$/eureka01" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka02" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka03" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rabbit-test01" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rabbit-test02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbit-receiver-01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbit-receiver-02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbit-sender" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbit-sender-01" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbitmq-01" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbitmq-02" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-dev" charset="UTF-8" />

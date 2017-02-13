@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/computeservicedev/pom.xml" />
         <option value="$PROJECT_DIR$/config01/pom.xml" />
         <option value="$PROJECT_DIR$/configclient/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbit-sender/pom.xml" />
       </set>
     </option>
   </component>
