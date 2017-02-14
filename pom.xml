@@ -38,6 +38,8 @@
         <module>rabbitmq-01</module>
         <module>rabbitmq-02</module>
         <module>rabbit-sender-01</module>
+        <module>rabbitmq-stream01</module>
+        <module>rabbitmq-stream02</module>
     </modules>
 
     <dependencies>

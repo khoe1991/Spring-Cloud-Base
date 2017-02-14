@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        worksChannel:                         #channelName
+          destination: work.exchange          #destination，或者可以认为是发布－订阅模型里面的topic，
+          contentType: application/json
+          group: testgroup
+          binder: rabbitmq1
+      binders:
+        rabbitmq1:
+          type: rabbit        #可以是其它，比如kafka
+          environment:
+            spring:
+              rabbitmq:
+                host: 172.16.20.250   #rabbitMQ服务器地址
+                port: 5672            #rabbitMQ服务器端口
+                username: springstream
+                password: 123456
+                virtual-host: springstream
+
+server:
+  port: 8001

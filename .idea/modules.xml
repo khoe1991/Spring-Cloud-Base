@@ -15,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/rabbit-sender-01/rabbit-sender-01.iml" filepath="$PROJECT_DIR$/rabbit-sender-01/rabbit-sender-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq-01/rabbitmq-01.iml" filepath="$PROJECT_DIR$/rabbitmq-01/rabbitmq-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq-02/rabbitmq-02.iml" filepath="$PROJECT_DIR$/rabbitmq-02/rabbitmq-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-stream01/rabbitmq-stream01.iml" filepath="$PROJECT_DIR$/rabbitmq-stream01/rabbitmq-stream01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-stream02/rabbitmq-stream02.iml" filepath="$PROJECT_DIR$/rabbitmq-stream02/rabbitmq-stream02.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-dev/test-dev.iml" filepath="$PROJECT_DIR$/test-dev/test-dev.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-dev2/test-dev2.iml" filepath="$PROJECT_DIR$/test-dev2/test-dev2.iml" />
     </modules>
