@@ -4,6 +4,7 @@ import com.rabbitmq.client.Channel;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
+import org.springframework.amqp.rabbit.connection.RoutingConnectionFactory;
 import org.springframework.amqp.rabbit.core.ChannelAwareMessageListener;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
@@ -19,8 +20,10 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class AmqpConfig {
 
-    public static final String DIRECT_EXCHANGE   = "direct-exchange";
-    public static final String ROUTINGKEY = "spring-boot-routingKey";
+    public static final String DIRECT_EXCHANGE   = "direct.exchange";
+    public static final String FANOUT_EXCHANGE   = "fanout.exchange";
+    public static final String TOPIC_EXCHANGE   = "topic.exchange";
+    public static final String ROUTING_KEY = "spring-boot-routingKey";
 
     @Bean
     public ConnectionFactory connectionFactory() {
@@ -36,8 +39,7 @@ public class AmqpConfig {
     @Bean
     @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE) //必须是prototype类型
     public RabbitTemplate rabbitTemplate() {
-        RabbitTemplate template = new RabbitTemplate(connectionFactory());
-        return template;
+        return new RabbitTemplate(connectionFactory());
     }
 
     /**
@@ -54,7 +56,7 @@ public class AmqpConfig {
     /**
      * direct-exchange
      */
-    @Bean
+/*    @Bean
     public DirectExchange defaultExchange() {
         return new DirectExchange(DIRECT_EXCHANGE);
     }
@@ -65,25 +67,41 @@ public class AmqpConfig {
     @Bean
     public Binding binding() {
         return BindingBuilder.bind(queue()).to(defaultExchange()).with(AmqpConfig.ROUTINGKEY);
-    }
+    }*/
 
     /**
      * fanout-exchange
      */
 /*    @Bean
     public FanoutExchange fanoutExchange () {
-        return new FanoutExchange(EXCHANGE);
+        return new FanoutExchange(FANOUT_EXCHANGE);
     }
     @Bean
     public Queue queue() {
-        return new Queue("fanout-exchange", true); //队列持久
+        return new Queue("rabbitmq.receiver01", true); //队列持久
     }
     @Bean
     public Binding binding() {
         return BindingBuilder.bind(queue()).to(fanoutExchange());
     }*/
 
+    /**
+     * topic-exchange
+     */
     @Bean
+    public TopicExchange topicExchange () {
+        return new TopicExchange(TOPIC_EXCHANGE);
+    }
+    @Bean
+    public Queue queue () {
+        return new Queue("rabbitmq.topic.receiver01");
+    }
+    @Bean
+    public Binding binding () {
+        return BindingBuilder.bind(queue()).to(topicExchange()).with("rabbitmq.topic.#");
+    }
+
+/*    @Bean
     public SimpleMessageListenerContainer messageContainer() {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer(connectionFactory());
         container.setQueues(queue());
@@ -101,6 +119,6 @@ public class AmqpConfig {
             }
         });
         return container;
-    }
+    }*/
 
 }

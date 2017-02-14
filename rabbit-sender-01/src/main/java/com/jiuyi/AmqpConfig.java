@@ -15,11 +15,10 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class AmqpConfig {
 
-    public static final String DIRECT_EXCHANGE   = "direct-exchange";
-
-    public static final String FANOUT_EXCHANGE   = "fanout-exchange";
-
-    public static final String ROUTINGKEY = "spring-boot-routingKey";
+    public static final String DIRECT_EXCHANGE   = "direct.exchange";
+    public static final String FANOUT_EXCHANGE   = "fanout.exchange";
+    public static final String TOPIC_EXCHANGE   = "topic.exchange";
+    public static final String ROUTING_KEY = "rabbitmq.topic.test";
 
     @Bean
     public ConnectionFactory connectionFactory() {
