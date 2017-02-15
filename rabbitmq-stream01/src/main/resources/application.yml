@@ -5,16 +5,16 @@ spring:
         worksChannel:                         #channelName
           destination: work.exchange          #destination，或者可以认为是发布－订阅模型里面的topic，
           contentType: application/json
-          group: testgroup
+          group: testgroup                    #组名，如果多个服务注册到同一个组内，则消息会使用负载均衡到每个消费者；分不同的组，消息会复制到每个组
           binder: rabbitmq1
       binders:
         rabbitmq1:
-          type: rabbit        #可以是其它，比如kafka
+          type: rabbit                        #可以是其它，比如kafka
           environment:
             spring:
               rabbitmq:
-                host: 172.16.20.250   #rabbitMQ服务器地址
-                port: 5672            #rabbitMQ服务器端口
+                host: 172.16.20.250           #rabbitMQ服务器地址
+                port: 5672                    #rabbitMQ服务器端口
                 username: springstream
                 password: 123456
                 virtual-host: springstream
