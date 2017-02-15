@@ -26,7 +26,7 @@ public class ComputeService {
 
     @RequestMapping("/hello")
     public String hello () {
-        String hello = "hello! " + user + "!!";
+        String hello = "compute-service01 " + user + "!!";
         System.out.println(hello);
         return hello;
     }

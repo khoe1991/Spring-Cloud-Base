@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/base.iml" filepath="$PROJECT_DIR$/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/compute-service-dev/compute-service-dev.iml" filepath="$PROJECT_DIR$/compute-service-dev/compute-service-dev.iml" />
-      <module fileurl="file://$PROJECT_DIR$/compute-service-dev2/compute-service-dev2.iml" filepath="$PROJECT_DIR$/compute-service-dev2/compute-service-dev2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/compute-service-dev3/compute-service-dev3.iml" filepath="$PROJECT_DIR$/compute-service-dev3/compute-service-dev3.iml" />
       <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/eureka-client/eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka01/eureka01.iml" filepath="$PROJECT_DIR$/eureka01/eureka01.iml" />

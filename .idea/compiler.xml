@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="compute-service-dev2" />
+        <module name="compute-service-dev" />
+        <module name="compute-service-dev3" />
         <module name="computecontroller" />
         <module name="computeservice" />
         <module name="config" />
@@ -34,18 +35,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="compute-service" />
       </profile>
-      <profile name="Annotation profile for compute-service-dev" enabled="true">
-        <sourceOutputDir name="../compute-service-dev2/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../compute-service-dev2/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="compute-service-dev" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base" target="1.8" />
       <module name="compute-service" target="1.8" />
       <module name="compute-service-dev" target="1.8" />
       <module name="compute-service-dev2" target="1.8" />
+      <module name="compute-service-dev3" target="1.8" />
       <module name="compute-service-production" target="1.8" />
       <module name="computecontroller" target="1.8" />
       <module name="computeservice" target="1.8" />

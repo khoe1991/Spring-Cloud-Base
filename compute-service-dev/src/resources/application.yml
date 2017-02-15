@@ -4,15 +4,21 @@ server:
 spring:
   application:
     name: compute-service-dev
-  cloud: #客户端服务启动时才会向配置中心请求配置文件，之后默认不会主动刷新
+  cloud:                                  #客户端服务启动时才会向配置中心请求配置文件，之后默认不会主动刷新
     config:
-      uri: http://localhost:8888  #配置中心服务器地址,默认地址是8888
-      name: cm  #定位gitHub资源，必须和配置中心的服务名称相同
-      profile: dev #定位gitHub资源，必须和配置中心中的配置文件相同
+      uri: http://localhost:8888          #配置中心服务器地址,默认地址是8888
+      name: cm                            #定位gitHub资源，必须和配置中心的服务名称相同
+      profile: dev                        #定位gitHub资源，必须和配置中心中的配置文件相同
+      fail-fast: true                     #连接到config服务器如果失败，则服务不能启动
       discovery:
-        enabled: true #开启通过服务来访问Config Server的功能
-        service-id: config-server #来指定Config Server注册的服务名
-
+        enabled: true                     #开启通过服务来访问Config Server的功能
+        service-id: config-server         #来指定Config Server注册的服务名
+  rabbitmq: #rabbitmq配置
+    host: 172.16.20.250
+    port: 5672
+    username: configAdmin
+    password: 123456
+    virtual-host: spring-cloud-config
 
 eureka:
   client:

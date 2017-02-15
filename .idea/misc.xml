@@ -14,6 +14,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/compute-service-dev2/pom.xml" />
         <option value="$PROJECT_DIR$/compute-service-production/pom.xml" />
         <option value="$PROJECT_DIR$/computeservicedev/pom.xml" />
         <option value="$PROJECT_DIR$/config01/pom.xml" />

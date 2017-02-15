@@ -9,16 +9,16 @@ spring:
       server:
         git:
           uri: https://github.com/khoe1991/SpringCloudConfigData #gitHub地址
-          clone-on-start: true
-          search-paths: cm #扫描gitHub的文件夹目录
+          cloneOnStart: true
+#          search-paths: cm #扫描gitHub的文件夹目录，如果在配置文件在根目录则不用配置
           #username: kejiangtao
           #password: kejiangtao
   rabbitmq: #rabbitmq配置
       host: 172.16.20.250
       port: 5672
-      username: jycfmq
-      password: jycfmq
-      virtual-host: jycf01
+      username: configAdmin
+      password: 123456
+      virtual-host: spring-cloud-config
 
 eureka:
   client:

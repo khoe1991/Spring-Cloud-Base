@@ -41,6 +41,7 @@
         <module>rabbitmq-stream01</module>
         <module>rabbitmq-stream02</module>
         <module>rabbitmq-stream03</module>
+        <module>compute-service-dev3</module>
     </modules>
 
     <dependencies>
@@ -59,6 +60,7 @@
         </dependency>
 
         <!--暴露各种指标-->
+        <!--包含了/refresh刷新API-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
